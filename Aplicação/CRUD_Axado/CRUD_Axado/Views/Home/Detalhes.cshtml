@@ -1,0 +1,57 @@
+﻿@model Dominio.Transportadora
+@using  Helpers
+@{
+    ViewBag.Title = "Detalhes da Transportadora";
+}
+
+<h2>Detalhes da Transportadora</h2>
+<div class="display-label">
+    @Html.DisplayNameFor(model => model.Nome):
+</div>
+<div class="display-field">
+    <b>@Html.DisplayFor(model => model.Nome)</b>
+</div>
+
+<div class="display-label">
+    @Html.DisplayNameFor(model => model.Cnpj):
+</div>
+<div class="display-field">
+    <b>@Html.DisplayFor(model => model.Cnpj)</b>
+</div>
+<div class="display-field">
+    @Html.DisplayNameFor(model => model.InscricaoEstadual):
+</div>
+<div class="display-field">
+    <b>@Html.DisplayFor(model => model.InscricaoEstadual)</b>
+</div>
+
+<div class="display-field">
+    @Html.DisplayNameFor(model => model.Endereco):
+</div>
+<div class="display-field">
+    <b>@Html.DisplayFor(model => model.Endereco)</b>
+</div>
+
+<div class="display-field">
+    @Html.DisplayNameFor(model => model.Email):
+</div>
+<div class="display-field">
+    <b>@Html.DisplayFor(model => model.Email)</b>
+</div>
+
+<div class="display-field">
+    @Html.DisplayNameFor(model => model.Telefone):
+</div>
+<div class="display-field">
+    <b>@Html.DisplayFor(model => model.Telefone)</b>
+</div>
+<br />
+<div>
+    @Html.ActionLink("Voltar", "Index") |
+    @Html.ActionLink("Avaliar", "AvaliarTransportadora", new { id = Model.Codigo }).If((bool)ViewBag.podeAvaliar, false)
+
+    @if (Model.Avaliacao != Dominio.AVALIACAO_TIPO.Nenhuma)
+    {
+        <b>Avaliou como @Html.DisplayFor(modelItem => Model.Avaliacao)</b>
+    }
+</div>

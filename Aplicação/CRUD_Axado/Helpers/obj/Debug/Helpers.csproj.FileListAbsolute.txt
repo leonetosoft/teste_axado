@@ -1,0 +1,5 @@
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Helpers\bin\Debug\Helpers.dll
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Helpers\bin\Debug\Helpers.pdb
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Helpers\obj\Debug\Helpers.dll
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Helpers\obj\Debug\Helpers.pdb
+C:\Users\leonetosoft\Documents\Visual Studio 2012\Projects\CRUD_Axado\Helpers\obj\Debug\Helpers.csprojResolveAssemblyReference.cache

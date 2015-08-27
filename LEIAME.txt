@@ -1,0 +1,52 @@
+Autor:
+ Leonardo de Aquino Neto  |  2015 | www.leonetosoft.com
+
+
+Versões Utilizadas neste teste: 
+ Versão do SQL Server: 10.0.1600.22
+ Visual Studio: 2012 For Web
+ C#.NET MVC : 4
+
+Projeto no GITHub
+ https://github.com/leonetosoft/teste_axado.git
+
+
+Arquivos:
+ Banco de dados: Banco de dados (Em .SQL e .bak)
+ Solution: Aplicação/CRUD_Axado/*
+
+NOTAS:
+
+ [1] - Para alterar a connection string entre em Web.config
+ 	altere a linha:
+ 		<add name="AXADO_Db" connectionString="Data Source=.\SQLEXPRESS;Integrated Security=True"
+        providerName="System.Data.SqlClient"/>
+
+ [2] - Permissoes do usuario sao aplicadas na tabela usuario_permissao
+Deve inserir o id do usuario e o nome da permissao (São duas aceitas: Administrador & Usuario)
+3 usuários já estão inseridor por padrão: 
+
+~> Usuario Administrador:
+	[1]
+	Login: admin 
+	Senha: teste
+
+~> Usuários Normais: (Privilégio 'Usuario')
+	[1]
+	Login: user
+	Senha: teste
+
+	[2]
+	Login: user2
+	Senha: teste
+	
+ 
+ [3] -  Somente usuarios com permissao 'Usuario' poderá avaliar as transportadoras,
+só é aceita uma avaliação por usuário para a tranportadora
+
+ [3] -  Usuarios administradores podem cadastrar, editar, visualizar e excluir a transportadora.
+
+
+
+	
+ 

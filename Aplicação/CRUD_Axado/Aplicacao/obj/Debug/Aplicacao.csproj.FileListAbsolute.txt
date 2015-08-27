@@ -1,0 +1,11 @@
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\obj\Debug\Aplicacao.csprojResolveAssemblyReference.cache
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\bin\Debug\Aplicacao.dll
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\bin\Debug\Aplicacao.pdb
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\bin\Debug\Dominio.dll
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\bin\Debug\Repositorio.dll
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\bin\Debug\Dominio.pdb
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\bin\Debug\Repositorio.pdb
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\obj\Debug\Aplicacao.dll
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Aplicacao\obj\Debug\Aplicacao.pdb
+C:\Users\leonetosoft\Documents\Visual Studio 2012\Projects\CRUD_Axado\Aplicacao\bin\Debug\Helpers.dll
+C:\Users\leonetosoft\Documents\Visual Studio 2012\Projects\CRUD_Axado\Aplicacao\bin\Debug\Helpers.pdb

@@ -1,0 +1,33 @@
+﻿@model Dominio.Transportadora
+
+@{
+    ViewBag.Title = "Avaliar Transportadora";
+}
+
+<h2>Avaliar Transportadora @Html.DisplayFor(model => model.Nome)</h2>
+
+
+<form action="/Home/AvaliarTransportadora" method="post" novalidate="novalidate">
+    <fieldset>
+        <legend>Avaliação</legend>
+        <div class="alert alert-info" role="alert"><strong>NOTA! </strong>Só será aceita uma avaliação por transporadora!</div>
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="editor-label">
+            <label>Qual sua avaliação?</label>
+        </div>
+         @Html.HiddenFor(model => model.Codigo)
+        <div class="editor-field">
+            <select name="avaliacao" class="form-control">
+                <option value="-1">Selecione</option>
+                <option value="3">Boa</option>
+                <option value="2">Média</option>
+                <option value="1">Ruim</option>
+                <option value="0">Péssima</option>
+            </select>
+        </div>
+        <p>
+            <input type="submit" value="Avaliar">
+        </p>
+    </fieldset>
+</form>

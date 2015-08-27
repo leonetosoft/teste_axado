@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Dominio.Transportadora>
+@using Helpers
+@using Dominio
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Transportadoras</h2>
+
+<p>
+    <a href="/User/Logout" class="btn btn-primary">Sair</a>
+    @if (ViewBag.isAdministrador)
+    {
+        <a href="/Home/Cadastrar" class="btn btn-primary">Nova Transportadora</a>
+    }
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cnpj)
+            </th>
+            <th style="text-align: center">
+                @Html.DisplayNameFor(model => model.InscricaoEstadual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th style="text-align: center">
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>Ações</th>
+            @if (ViewBag.isUsuario)
+            {
+                <th>Sua Avaliação</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td scope="row">
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cnpj)
+                </td>
+                <td style="text-align: center">
+                    @Html.DisplayFor(modelItem => item.InscricaoEstadual)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td style="text-align: center">
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+                <td>
+
+                    @Html.ActionLink("Editar", "Editar", new { id = item.Codigo }).If((bool)ViewBag.isAdministrador, true)
+
+                    @Html.ActionLink("Detalhes", "Detalhes", new { id = item.Codigo }).If(true, (bool)ViewBag.isAdministrador || (bool)ViewBag.isUsuario && item.Avaliacao == AVALIACAO_TIPO.Nenhuma)
+
+                    @Html.ActionLink("Excluir", "Excluir", new { id = item.Codigo }).If((bool)ViewBag.isAdministrador, false)
+
+                    @Html.ActionLink("Avaliar", "AvaliarTransportadora", new { id = item.Codigo }).If((bool)ViewBag.isUsuario && item.Avaliacao == AVALIACAO_TIPO.Nenhuma, false)
+                </td>
+                @if (ViewBag.isUsuario)
+                {
+                    <td style="text-align: center">
+                        @Html.DisplayFor(modelItem => item.Avaliacao)
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+
+</table>

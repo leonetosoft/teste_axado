@@ -1,0 +1,5 @@
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Dominio\bin\Debug\Dominio.dll
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Dominio\bin\Debug\Dominio.pdb
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Dominio\obj\Debug\Dominio.dll
+c:\users\leonetosoft\documents\visual studio 2012\Projects\CRUD_Axado\Dominio\obj\Debug\Dominio.pdb
+C:\Users\leonetosoft\Documents\Visual Studio 2012\Projects\CRUD_Axado\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
